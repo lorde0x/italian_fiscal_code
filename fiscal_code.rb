@@ -9,9 +9,6 @@ while i == true do
 	first_name = gets.chomp.upcase
 	if first_name[0] == ' ' or first_name.empty? 
 		next
-	if first_name.index.include?(t)
-		next
-	end
 	end 
 	i = false
 end
@@ -48,16 +45,6 @@ while i == true do
 	end 
 	i = false
 end
-i = true
-while i == true do
-	puts 'which month were you born?'
-	month = gets.chomp
-	if month.empty? or month[0] == ' ' 
-		next
-	end 
-	i = false
-end
-
 months = Hash.new 
 months = {
 'jenuary' => 'A',
@@ -73,6 +60,18 @@ months = {
 'november' => 'S',
 'december' => 'T'  }
 
+i = true
+while i == true do
+	puts 'which month were you born?'
+	month = gets.chomp
+	if month.empty? or month[0] == ' ' 
+		next
+	end 
+	if months.include?(month) == false
+		next
+	end
+	i = false
+end
 i = true
 while i == true do  
 	puts "what gender are you?"
