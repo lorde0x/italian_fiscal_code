@@ -1,6 +1,6 @@
 # italian_fiscal_code
 
-This a Ruby programme that calculate your italian fiscal code.
+This is a Ruby programme that calculate your italian fiscal code.
 Before running it you need to populate your database with town codes related to communes.
 
 1) Go to "http://statistica.regione.emilia-romagna.it/primo-piano/elenco_comuni_italiani_1gennaio_2014.xls" and create a CSV file containing two columns taken by fields "codice catastale" and "solo denominazione in italiano".
