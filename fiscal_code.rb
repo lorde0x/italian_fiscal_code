@@ -150,7 +150,7 @@ i = true
 	place = gets.chomp.upcase
 	
  begin
-	con = Mysql.new 'localhost', 'user', 'password', 'fiscal_code_db'
+	con = Mysql.new 'current_host', 'username', 'password', 'database'
 	h = con.query("select town_code from fiscal_code where town_name = \"#{place}\"")
 	j = h.fetch_row
 		
